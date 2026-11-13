@@ -1,6 +1,6 @@
-# Libro_Python – Python per Databricks
+# Oltre la SELECT – notebook del libro
 
-Notebook del libro *Python per Databricks*: codice dei capitoli, esercizi e soluzioni.
+Notebook del libro *Oltre la SELECT. Imparare Python con Databricks, partendo da ciò che si conosce*: codice dei capitoli, esercizi e soluzioni.
 Tutti gli esempi usano la base dati `samples.wanderbricks`, già presente in ogni account
 Databricks Free Edition.
 
@@ -8,8 +8,10 @@ Databricks Free Edition.
 
 1. In Databricks si apre **Workspace → Users →** *proprio indirizzo email*.
 2. Si sceglie **Create → Git folder**.
-3. In **Git repository URL** si incolla l'indirizzo di questo repository; il provider è **GitHub**.
-4. Si lascia come nome della cartella `Libro_Python` e si conferma con **Create Git folder**.
+3. In **Git repository URL** si incolla l'indirizzo di questo repository
+   (`https://github.com/wcafass/Python_From_Databricks.git`); il provider è **GitHub**.
+4. In **Git folder name** si scrive `Libro_Python` al posto del nome proposto e si conferma
+   con **Create Git folder**.
 
 Non servono credenziali GitHub: il repository è pubblico.
 
@@ -24,6 +26,7 @@ Gli altri notebook si eseguono una cella alla volta.
 |-|-|
 | `L00_Prepara_Dati` | Preparazione dei dati (si esegue una volta) |
 | `L00_Orientarsi_Databricks`, `L00_Esercizi`, `L00_Soluzioni` | Capitolo 0 – Orientarsi in Databricks |
+| `L01_Primi_Passi_Python`, `L01_Esercizi`, `L01_Soluzioni` | Capitolo 1 – Primi passi con Python |
 
 I notebook dei capitoli successivi si aggiungono man mano. Per ricevere gli aggiornamenti si
 apre il Git folder e si usa **Pull**.
