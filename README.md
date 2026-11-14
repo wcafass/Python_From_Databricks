@@ -30,6 +30,7 @@ Gli altri notebook si eseguono una cella alla volta.
 | `L02_Operatori_Condizioni`, `L02_Esercizi`, `L02_Soluzioni` | Capitolo 2 – Operatori e condizioni |
 | `L03_Liste_Dizionari`, `L03_Esercizi`, `L03_Soluzioni` | Capitolo 3 – Collezioni: liste e dizionari |
 | `L04_Cicli`, `L04_Esercizi`, `L04_Soluzioni` | Capitolo 4 – Cicli |
+| `L05_Funzioni`, `L05_Esercizi`, `L05_Soluzioni` | Capitolo 5 – Funzioni |
 
 I notebook dei capitoli successivi si aggiungono man mano. Per ricevere gli aggiornamenti si
 apre il Git folder e si usa **Pull**.
