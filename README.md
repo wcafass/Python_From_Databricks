@@ -33,6 +33,7 @@ Gli altri notebook si eseguono una cella alla volta.
 | `L05_Funzioni`, `L05_Esercizi`, `L05_Soluzioni` | Capitolo 5 – Funzioni |
 | `L06_Errori_Debug`, `L06_Esercizi`, `L06_Soluzioni` | Capitolo 6 – Errori e debug |
 | `L07_Moduli_Librerie`, `L07_Esercizi`, `L07_Soluzioni` | Capitolo 7 – Moduli e librerie |
+| `L08_Da_SQL_a_PySpark`, `L08_Esercizi`, `L08_Soluzioni` | Capitolo 8 – Da SQL a PySpark |
 
 I notebook dei capitoli successivi si aggiungono man mano. Per ricevere gli aggiornamenti si
 apre il Git folder e si usa **Pull**.
