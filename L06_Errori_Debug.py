@@ -390,7 +390,7 @@ print(cancellation_rate(2, 4))
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Correzione: `NULLIF` trasforma il denominatore zero in `NULL`, e la divisione restituisce `NULL`. Risultato atteso: `null` e `50.0`.
+# MAGIC Correzione: `NULLIF` trasforma il denominatore zero in `NULL`, e la divisione restituisce `NULL`. Risultato atteso: `null` e `50` (la griglia mostra il valore senza decimali).
 
 # COMMAND ----------
 
@@ -569,7 +569,7 @@ print(max(prices))
 
 # MAGIC %md
 # MAGIC ## 6.8 try / except
-# MAGIC **Ponte SQL**: `try_cast` e `try_divide` restituiscono `NULL` invece di fermarsi. Risultato atteso: `null`, `236.95`, `null`, `50.0`.
+# MAGIC **Ponte SQL**: `try_cast` e `try_divide` restituiscono `NULL` invece di fermarsi. Risultato atteso: `null`, `236.95`, `null`, `50`.
 
 # COMMAND ----------
 
