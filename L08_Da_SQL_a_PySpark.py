@@ -369,7 +369,7 @@ print(result)
 # MAGIC Risultato atteso: 
 # MAGIC ```
 # MAGIC root
-# MAGIC  |-- booking_id: long (nullable = true)
+# MAGIC  |-- booking_id: long (nullable = false)
 # MAGIC  |-- user_id: long (nullable = true)
 # MAGIC  |-- property_id: long (nullable = true)
 # MAGIC  |-- check_in: date (nullable = true)
@@ -475,9 +475,9 @@ print(prices_df.columns)
 # MAGIC Risultato atteso: 
 # MAGIC ```
 # MAGIC property_type
+# MAGIC Historical Place
 # MAGIC Urban Year-Round
 # MAGIC Summer Getaway
-# MAGIC Historical Place
 # MAGIC Ski Resort
 # MAGIC
 # MAGIC 4

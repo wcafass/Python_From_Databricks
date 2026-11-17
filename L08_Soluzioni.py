@@ -99,14 +99,14 @@ print("base_price" in properties_df.columns, "price" in properties_df.columns)
 # COMMAND ----------
 
 # Verifica: risultato atteso
-print("Schema: una riga per colonna, tra cui |-- base_price: float (nullable = true)")
-print("Numero di colonne: uguale al numero di righe della verifica DESCRIBE TABLE")
+print("Schema: 13 righe, tra cui |-- property_id: long (nullable = false) e |-- base_price: float (nullable = true)")
+print(13)
 print(True, False)
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC -- Verifica: una riga per colonna (il numero di righe è il numero di colonne)
+# MAGIC -- Verifica: 13 righe, una per colonna
 # MAGIC DESCRIBE TABLE samples.wanderbricks.properties
 
 # COMMAND ----------
