@@ -31,6 +31,7 @@ Gli altri notebook si eseguono una cella alla volta.
 | `L03_Liste_Dizionari`, `L03_Esercizi`, `L03_Soluzioni` | Capitolo 3 – Collezioni: liste e dizionari |
 | `L04_Cicli`, `L04_Esercizi`, `L04_Soluzioni` | Capitolo 4 – Cicli |
 | `L05_Funzioni`, `L05_Esercizi`, `L05_Soluzioni` | Capitolo 5 – Funzioni |
+| `L06_Errori_Debug`, `L06_Esercizi`, `L06_Soluzioni` | Capitolo 6 – Errori e debug |
 
 I notebook dei capitoli successivi si aggiungono man mano. Per ricevere gli aggiornamenti si
 apre il Git folder e si usa **Pull**.
