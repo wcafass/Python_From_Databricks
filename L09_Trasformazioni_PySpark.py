@@ -745,10 +745,10 @@ display(guide_summary_df)
 # MAGIC Risultato atteso: 
 # MAGIC ```
 # MAGIC property_type     property_count  avg_price  min_price  max_price
-# MAGIC Urban Year-Round  9264            173.04     82.2       561.97
-# MAGIC Summer Getaway    7068            198.54     101.01     517.6
-# MAGIC Historical Place  1646            147.46     55.93      330.19
-# MAGIC Ski Resort        185             266.49     143.95     530.96
+# MAGIC Urban Year-Round  9264            173.04     82.19999694824219   561.969970703125
+# MAGIC Summer Getaway    7068            198.54     101.01000213623047  517.5999755859375
+# MAGIC Historical Place  1646            147.46     55.93000030517578   330.19000244140625
+# MAGIC Ski Resort        185             266.49     143.9499969482422   530.9600219726562
 # MAGIC ```
 
 # COMMAND ----------
@@ -1295,7 +1295,7 @@ display(large_df.orderBy(F.col("property_count").desc()))
 # MAGIC
 # MAGIC | Tipo di errore | Messaggio tipico | Significato | Prima cosa da controllare |
 # MAGIC | --- | --- | --- | --- |
-# MAGIC | `NOT_COLUMN` | ``Argument `col` should be a Column, got str`` | un valore fisso dove serve una colonna | `F.lit()` attorno al valore |
+# MAGIC | `NOT_EXPECTED_TYPE` | ``Argument `col` should be Column, got str`` | un valore fisso dove serve una colonna | `F.lit()` attorno al valore |
 # MAGIC | `CANNOT_CONVERT_COLUMN_INTO_BOOL` | `Cannot convert column into bool` | una condizione di colonna usata come vero/falso | `&`, `\|`, `~` al posto di `and`, `or`, `not`; le parentesi; un `if` al posto di `F.when` |
 # MAGIC | `TypeError` | `unsupported operand type(s) for +: 'int' and 'str'` | una funzione di Python al posto di quella di Spark | il prefisso `F.` (`F.sum`, `F.round`, `F.min`, `F.max`) |
 # MAGIC | `AttributeError` | `'GroupedData' object has no attribute 'orderBy'` | `groupBy` senza `agg` | l'`agg()` dopo `groupBy()` |
