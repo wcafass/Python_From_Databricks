@@ -37,6 +37,7 @@ Gli altri notebook si eseguono una cella alla volta.
 | `L08_Da_SQL_a_PySpark`, `L08_Esercizi`, `L08_Soluzioni` | Capitolo 8 – Da SQL a PySpark |
 | `L09_Trasformazioni_PySpark`, `L09_Esercizi`, `L09_Soluzioni` | Capitolo 9 – Trasformazioni con PySpark |
 | `L10_Tabelle_Delta`, `L10_Esercizi`, `L10_Soluzioni` | Capitolo 10 – Leggere e scrivere tabelle Delta |
+| `L11_Progetto_Finale`, `L11_Esercizi`, `L11_Soluzioni` | Capitolo 11 – Progetto finale |
 
 I notebook dei capitoli successivi si aggiungono man mano. Per ricevere gli aggiornamenti si
 apre il Git folder e si usa **Pull**.
