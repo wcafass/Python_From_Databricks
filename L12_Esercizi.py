@@ -104,7 +104,7 @@ print("Preparazione completata")
 # MAGIC %md
 # MAGIC ## Esercizio 5 ★★ – Il volume minimo come parametro
 # MAGIC
-# MAGIC **Dashboard.** Nella query del dataset **Report cancellazioni** si sostituisca il numero 20 con il parametro `:min_bookings` (la query diventa quella di `exercise_query`); nelle impostazioni del parametro si scelgano **Type** → **Numeric**, **Display name** `Volume minimo` e valore 20. Lo si aggiunga alla pagina con un filtro **Single value**. Con la soglia al 30%, si leggano le combinazioni critiche con il volume minimo a 10 e a 30, poi lo si riporti a 20.
+# MAGIC **Dashboard.** Nella query del dataset **Report cancellazioni** si sostituisca il numero 20 con il parametro `:min_bookings` (la query diventa quella di `exercise_query`); nelle impostazioni del parametro si scelgano **Type** → **Numeric**, **Numeric type** → **Integer**, **Display name** `Volume minimo` e valore 20. Lo si aggiunga alla pagina con un filtro **Single value**. Con la soglia al 30%, si leggano le combinazioni critiche con il volume minimo a 10 e a 30, poi lo si riporti a 20.
 # MAGIC
 # MAGIC **Notebook.** Per i volumi minimi 10 e 30 si esegua `exercise_query` con la soglia 30 e si conti ogni stato (`groupBy` + `count`), stampando una lista di coppie (stato, numero).
 # MAGIC

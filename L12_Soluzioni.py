@@ -186,7 +186,7 @@ print(country_rows[-1]["country"], country_rows[-1]["overall_cancellation_rate"]
 # MAGIC %md
 # MAGIC ## Esercizio 5 ★★ – Il volume minimo come parametro
 # MAGIC
-# MAGIC Dashboard: nella query del dataset `20` diventa `:min_bookings`; nel riquadro del nuovo parametro, ingranaggio → **Type** **Numeric**, **Display name** `Volume minimo`, valore 20; sulla pagina un filtro **Single value** con **Parameters** → **Volume minimo**.
+# MAGIC Dashboard: nella query del dataset `20` diventa `:min_bookings`; nel riquadro del nuovo parametro, ingranaggio → **Type** **Numeric**, **Numeric type** **Integer**, **Display name** `Volume minimo`, valore 20; sulla pagina un filtro **Single value** con **Parameters** → **Volume minimo**.
 # MAGIC
 # MAGIC Risultato atteso – output:
 # MAGIC ```
