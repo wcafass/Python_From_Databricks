@@ -38,6 +38,7 @@ Gli altri notebook si eseguono una cella alla volta.
 | `L09_Trasformazioni_PySpark`, `L09_Esercizi`, `L09_Soluzioni` | Capitolo 9 – Trasformazioni con PySpark |
 | `L10_Tabelle_Delta`, `L10_Esercizi`, `L10_Soluzioni` | Capitolo 10 – Leggere e scrivere tabelle Delta |
 | `L11_Progetto_Finale`, `L11_Esercizi`, `L11_Soluzioni` | Capitolo 11 – Progetto finale |
+| `L12_Dashboard`, `L12_Esercizi`, `L12_Soluzioni` | Capitolo 12 – Dalla tabella alla dashboard (la dashboard si costruisce nell'interfaccia, da **Dashboards**) |
 
 I notebook dei capitoli successivi si aggiungono man mano. Per ricevere gli aggiornamenti si
 apre il Git folder e si usa **Pull**.
