@@ -174,9 +174,9 @@ for check_name, value in update_profile.items():
 # MAGIC %md
 # MAGIC Risultato atteso – output (griglia):
 # MAGIC ```
-# MAGIC booking_id  booking_update_id  status     total_amount  updated_at
-# MAGIC 2563        17570289891300     pending    776.26        2024-07-13T23:59:59.000Z
-# MAGIC 2563        17570289907102     cancelled  776.26        2024-07-13T23:59:59.000Z
+# MAGIC booking_id  booking_update_id  status     total_amount      updated_at
+# MAGIC 2563        17570289891300     pending    776.260009765625  2024-07-13T23:59:59.000+00:00
+# MAGIC 2563        17570289907102     cancelled  776.260009765625  2024-07-13T23:59:59.000+00:00
 # MAGIC ```
 
 # COMMAND ----------
@@ -396,7 +396,7 @@ print(chosen_updates_df.count(), chosen_updates_df.select("booking_id").distinct
 # MAGIC Risultato atteso – output (griglia):
 # MAGIC ```
 # MAGIC booking_id  booking_update_id  status     updated_at
-# MAGIC 2563        17570289907102     cancelled  2024-07-13T23:59:59.000Z
+# MAGIC 2563        17570289907102     cancelled  2024-07-13T23:59:59.000+00:00
 # MAGIC ```
 
 # COMMAND ----------
@@ -410,17 +410,16 @@ display(
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Risultato atteso – output:
+# MAGIC Risultato atteso – output (le due righe di `write_table`, poi la griglia, poi `True`):
 # MAGIC ```
 # MAGIC Scrittura di workspace.libro_python.s_aggiornamenti_puliti_prenotazione (mode=overwrite)
 # MAGIC Righe nella tabella: 9,133
-# MAGIC True
-# MAGIC ```
-# MAGIC Risultato atteso – output (griglia):
-# MAGIC ```
+# MAGIC
 # MAGIC quality_note      booking_count
 # MAGIC importo negativo  1
 # MAGIC ok                9132
+# MAGIC
+# MAGIC True
 # MAGIC ```
 
 # COMMAND ----------
@@ -912,7 +911,7 @@ print(spark.table(CLEAN_BOOKINGS_TABLE).count())
 # MAGIC **ERRORE VOLUTO**: la cella seguente deve fallire; la cella *Correzione* sotto deve funzionare.
 # MAGIC Risultato atteso – messaggio (riga di riepilogo):
 # MAGIC ```
-# MAGIC [AMBIGUOUS_REFERENCE] Reference `booking_count` is ambiguous, could be: [`workspace`.`libro_python`.`g_cancellazioni_aggiornate_destinazione_mese`.`booking_count`, `booking_count`]. SQLSTATE: 42704
+# MAGIC [AMBIGUOUS_REFERENCE] Reference `booking_count` is ambiguous, could be: [`booking_count`, `workspace`.`libro_python`.`g_cancellazioni_aggiornate_destinazione_mese`.`booking_count`]. SQLSTATE: 42704
 # MAGIC ```
 
 # COMMAND ----------
