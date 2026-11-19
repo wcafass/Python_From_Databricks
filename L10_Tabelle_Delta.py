@@ -119,7 +119,7 @@ print(bookings_df.columns == spark.sql(f"SELECT * FROM {SOURCE_BOOKINGS_TABLE}")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC La cella seguente deve fallire (la tabella si chiama booking_updates, non bookings_updates; l'errore compare sulla riga 3, quella di count()).
+# MAGIC La cella seguente deve fallire (la tabella si chiama booking_updates, non bookings_updates; il traceback indica la riga 3, quella di count(), e poi la riga 2, dove nasce il DataFrame).
 
 # COMMAND ----------
 
@@ -389,7 +389,7 @@ print(daily_table_df.count(), daily_table_df.distinct().count())
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC La cella seguente deve fallire (la modalità si scrive overwrite, non overwrites).
+# MAGIC La cella seguente deve fallire (la modalità si scrive overwrite, non overwrites; il traceback indica la riga 5, quella di saveAsTable).
 
 # COMMAND ----------
 
@@ -802,9 +802,11 @@ print(spark.table(GUIDE_BOOKINGS_TABLE).count())
 # MAGIC version  operation
 # MAGIC 0        CREATE OR REPLACE TABLE AS SELECT
 # MAGIC 1        MERGE
-# MAGIC 2        MERGE
+# MAGIC 2        OPTIMIZE
+# MAGIC 3        MERGE
+# MAGIC 4        OPTIMIZE
 # MAGIC ```
-# MAGIC Se il notebook è stato eseguito più volte, le versioni sono di più.
+# MAGIC Le versioni OPTIMIZE le aggiunge Databricks da solo dopo i MERGE. Se il notebook è stato eseguito più volte, le versioni sono di più.
 
 # COMMAND ----------
 
@@ -820,7 +822,7 @@ display(spark.sql(f"DESCRIBE HISTORY {GUIDE_BOOKINGS_TABLE}").select("version", 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC La cella seguente contiene solo `%run ./utils` e non produce output. Il notebook `utils` deve trovarsi nella stessa cartella di questo notebook.
+# MAGIC La cella seguente contiene solo `%run ./utils` e mostra soltanto la cella di testo iniziale di `utils`. Il notebook `utils` deve trovarsi nella stessa cartella di questo notebook.
 
 # COMMAND ----------
 

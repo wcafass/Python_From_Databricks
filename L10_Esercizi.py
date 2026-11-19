@@ -12,7 +12,7 @@
 
 # MAGIC %md
 # MAGIC ## Preparazione
-# MAGIC La prima cella contiene solo `%run ./utils` e non produce output; la seconda definisce le costanti degli esercizi. Risultato atteso: `Preparazione completata`.
+# MAGIC La prima cella contiene solo `%run ./utils` e mostra soltanto la cella di testo iniziale di `utils`; la seconda definisce le costanti degli esercizi. Risultato atteso: `Preparazione completata`.
 
 # COMMAND ----------
 
@@ -49,7 +49,7 @@ print("Preparazione completata")
 
 # Verifica: risultato atteso
 print("18163 13")
-print("42 5")
+print("42 6")
 print("True")
 print("delta")
 
@@ -139,7 +139,7 @@ display(spark.sql(f"""
 print("punto 1: 90")
 print("punto 2: 121 90")
 print("punto 3: 90 90")
-print("punto 4: versioni 0 (creazione), 1 WRITE, 2 WRITE, 3 WRITE, 4 CREATE OR REPLACE TABLE AS SELECT")
+print("punto 4: versioni 0 CREATE OR REPLACE TABLE AS SELECT, 1 WRITE, 2 WRITE, 3 WRITE, 4 CREATE OR REPLACE TABLE AS SELECT")
 print("         righe: 0 30 / 1 59 / 2 90 / 3 121 / 4 90")
 
 # COMMAND ----------
