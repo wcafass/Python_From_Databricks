@@ -2,7 +2,7 @@
 # MAGIC %md
 # MAGIC # Capitolo 13 – Soluzioni degli esercizi
 # MAGIC
-# MAGIC Soluzioni commentate degli esercizi del Capitolo 13 di *Oltre la SELECT* (Introduzione al Machine Learning). Prerequisiti: Serverless; `L11_Progetto_Finale` eseguito almeno una volta; `utils` nella stessa cartella. L'esercizio 6 registra tre run nell'esperimento di MLflow `libro_python_capitolo_13`.
+# MAGIC Soluzioni commentate degli esercizi del Capitolo 13 di *Oltre la SELECT* (Introduzione al Machine Learning). Prerequisiti: Serverless; `L11_Progetto_Finale` eseguito almeno una volta; `utils` nella stessa cartella. Gli esercizi 6 registrano tre run nell'esperimento di MLflow `libro_python_capitolo_13`.
 # MAGIC
 # MAGIC Si esegue **una cella alla volta**. Nell'esercizio 8 le celle **ERRORE VOLUTO** devono fallire (Run all si ferma alla cella 8a) e le celle **ERRORE SILENZIOSO** danno un risultato sbagliato; sotto ciascuna c'è la correzione.
 
@@ -280,7 +280,7 @@ display(guide_pd[["property_id", "destination", "base_price", "predicted_price"]
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Risultato atteso – output: il riquadro di MLflow con i tre run registrati, poi:
+# MAGIC Risultato atteso – output (eventualmente alternato alle righe `WARNING` di MLflow, una per run, che si ignorano): il riquadro di MLflow con i tre run registrati, poi:
 # MAGIC ```
 # MAGIC solo_bagni                     1   38.36   0.126
 # MAGIC numeriche_e_tipo               6   28.52   0.506

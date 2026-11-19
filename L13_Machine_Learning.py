@@ -677,7 +677,7 @@ print(experiment.name)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Risultato atteso – output: il riquadro **MLflow run** (*Logged 1 run to an experiment in MLflow*, con la tabella del run `prezzo_completo`), poi:
+# MAGIC Risultato atteso – output: il riquadro **MLflow run** (*Logged 1 run to an experiment in MLflow*, con la tabella del run `prezzo_completo`), poi l'output qui sotto. Sotto il riquadro possono comparire, una per run, righe `WARNING mlflow.tracking.context.registry: Encountered unexpected error during resolving tags…`: sono avvisi interni di MLflow su Serverless, il run è registrato lo stesso e si possono ignorare.
 # MAGIC ```
 # MAGIC {'mae': 12.67, 'r2': 0.89}
 # MAGIC ```
@@ -697,7 +697,7 @@ print(price_metrics)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Risultato atteso – output: il riquadro di MLflow con i tre run registrati, poi:
+# MAGIC Risultato atteso – output: il riquadro di MLflow con i tre run registrati, poi le tre righe qui sotto, eventualmente alternate alle righe `WARNING` di MLflow (una per run, si ignorano):
 # MAGIC ```
 # MAGIC solo_camere                1   33.94   0.326
 # MAGIC tre_numeriche              3   32.71   0.383
