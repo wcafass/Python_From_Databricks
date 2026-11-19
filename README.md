@@ -39,9 +39,9 @@ Gli altri notebook si eseguono una cella alla volta.
 | `L10_Tabelle_Delta`, `L10_Esercizi`, `L10_Soluzioni` | Capitolo 10 – Leggere e scrivere tabelle Delta |
 | `L11_Progetto_Finale`, `L11_Esercizi`, `L11_Soluzioni` | Capitolo 11 – Progetto finale |
 | `L12_Dashboard`, `L12_Esercizi`, `L12_Soluzioni` | Capitolo 12 – Dalla tabella alla dashboard (la dashboard si costruisce nell'interfaccia, da **Dashboards**) |
+| `L13_Machine_Learning`, `L13_Esercizi`, `L13_Soluzioni` | Capitolo 13 – Introduzione al Machine Learning (registra gli esperimenti in MLflow, nell'esperimento `libro_python_capitolo_13` della cartella personale) |
 
-I notebook dei capitoli successivi si aggiungono man mano. Per ricevere gli aggiornamenti si
-apre il Git folder e si usa **Pull**.
+Per ricevere gli aggiornamenti si apre il Git folder e si usa **Pull**.
 
 ## Attenzione agli esercizi
 
